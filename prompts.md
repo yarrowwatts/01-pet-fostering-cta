@@ -1,16 +1,15 @@
 ## Prompt 1
 Your task is to create HTML and CSS for a Call-to-Action section encouraging pet adoption and fostering.
 
-The CTA section should include:
+The CTA section should be a tall, visually striking banner and include:
 - A large main heading that encourages visitors to take action.
 - A short description explaining the importance of fostering rescue animals.
 - A call-to-action link styled as a bright, eye-catching button that stands out against the background.
 
 Follow these guidelines:
 - Use a nature-inspired, blue & teal color palette to convey trust, reliability, and calmness.
+- Use a modern, easy-to-read font to enhance readability and design.
 - Document the CSS with short comments that explain its purpose.
-
-The final result should be an engaging and visually appealing Call-to-Action banner that clearly conveys the mission of pet fostering.
 
 ## Prompt 2
 Add a simple header displaying the name of the site, 'PetQuest'.
