@@ -1,7 +1,7 @@
 ## Prompt 1
-Your task is to create HTML and CSS for a Call to Action Banner encouraging pet adoption and fostering.
+Your task is to create HTML and CSS for a Call to Action section encouraging pet adoption and fostering.
 
-The banner should include:
+The CTA section should include:
 - A large main heading that encourages visitors to take action.
 - A short description explaining the importance of fostering rescue animals.
 - A call-to-action link styled as a bright, eye-catching button that stands out against the background.
