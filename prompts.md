@@ -8,7 +8,7 @@ The banner should include:
 
 Follow these guidelines:
 - Use a nature-inspired, blue & teal color palette to convey trust, reliability, and calmness.
-- Document the code with short comments that explain its purpose.
+- Document the CSS with short comments that explain its purpose.
 
 The final result should be an engaging and visually appealing Call to Action banner that clearly conveys the mission of pet adoption.
 
