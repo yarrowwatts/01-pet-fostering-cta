@@ -1,19 +1,25 @@
 ## Prompt 1
-Your task is to create HTML and CSS for a pet adoption Call to Action Banner.
+Your task is to create HTML and CSS for a Call to Action Banner encouraging pet adoption and fostering.
 
 The banner should include:
 - A large main heading that encourages visitors to take action.
 - A short description explaining the importance of fostering rescue animals.
-- A call-to-action link styled as a button.
+- A call-to-action link styled as a bright, eye-catching button that stands out against the background.
 
 Follow these guidelines:
 - Use a nature-inspired, blue & teal color palette to convey trust, reliability, and calmness.
 - Document the CSS with short comments that explain its purpose.
 
-The final result should be an engaging and visually appealing Call to Action banner that clearly conveys the mission of pet adoption.
+The final result should be an engaging and visually appealing Call to Action banner that clearly conveys the mission of pet fostering.
 
 ## Prompt 2
 Add a simple header displaying the name of the site, 'PetQuest'.
-- The header should be short and include the site name in a visually appealing way.
+- The header should be short and include the site name.
 - Place the header above the Call to Action banner.
 - Keep the design simple and aligned with the color palette used in the banner.
+
+## Prompt 3
+Set img/cta-bg.jpg as the background image for the banner. Apply a light overlay to keep the image subtle while ensuring the text remains clear and readable.
+
+## Prompt 4
+Below the banner, create a new section that displays the image 'img/pet.jpg' alongside additional information about fostering pets. Arrange them in two evenly sized columns, centered on the page.
