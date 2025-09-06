@@ -4,16 +4,58 @@ body {
 	margin: 0;
 	padding: 0;
 	background: #eaf6fb;
+	text-align: center; /* Center all content by default */
+}
+/* Simple, centered site header */
+.site-header {
+	background-color: #1976a5; /* Deep blue */
+	color: #fff;
+	padding: 18px 0 12px 0;
+	text-align: center;
+	font-size: 1.5em;
+	letter-spacing: 1px;
 }
 
 /* Style the CTA banner section */
+/* CTA banner with background image and overlay */
 .cta-banner {
-	background: linear-gradient(rgba(0, 60, 90, 0.7), rgba(0, 120, 130, 0.7)), #1e6f8c;
+	position: relative;
+	background-image: url('img/cta-bg.jpg');
+	background-size: cover;
+	background-position: center;
 	color: #fff;
-	text-align: center;
-	padding: 80px 20px;
 	min-height: 350px;
 	display: block;
+	margin-bottom: 32px;
+	text-align: center;
+}
+
+/* Light overlay for readability */
+.cta-overlay {
+	position: absolute;
+	top: 0; left: 0; right: 0; bottom: 0;
+	background: rgba(30, 144, 163, 0.5); /* Teal overlay */
+	z-index: 1;
+}
+
+/* Content sits above overlay */
+.cta-content {
+	position: relative;
+	z-index: 2;
+	padding: 60px 16px 48px 16px;
+}
+
+.cta-content h2 {
+	font-size: 2.2em;
+	margin-bottom: 18px;
+}
+
+.cta-content p {
+	font-size: 1.15em;
+	margin-bottom: 28px;
+	max-width: 500px;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* Main heading style */
@@ -45,8 +87,48 @@ body {
 	font-weight: bold;
 	transition: background 0.2s;
 	display: inline-block;
+	margin-top: 8px;
 }
 
 .cta-button:hover {
 	background-color: #0077b6;
+}
+/* Info section with two centered columns */
+.info-section {
+	max-width: 700px;
+	margin: 36px auto 0 auto;
+	background: #fff;
+	border-radius: 8px;
+	padding: 24px 16px;
+	display: inline-block;
+	text-align: center;
+}
+
+.info-image {
+	width: 45%;
+	max-width: 220px;
+	border-radius: 8px;
+	margin-bottom: 16px;
+	margin-right: 2%;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.info-text {
+	display: inline-block;
+	width: 45%;
+	vertical-align: middle;
+	text-align: left;
+}
+
+@media (max-width: 700px) {
+	.info-image, .info-text {
+		display: block;
+		width: 100%;
+		margin: 0 auto 16px auto;
+		text-align: center;
+	}
+	.info-text {
+		text-align: center;
+	}
 }
