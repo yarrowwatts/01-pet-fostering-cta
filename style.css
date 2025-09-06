@@ -1,3 +1,12 @@
+/* Logo size constraint */
+.site-logo {
+	max-width: 200px;
+	max-height: 200px;
+	width: auto;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+}
 /* Import modern, friendly Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;700&family=Quicksand:wght@700&display=swap');
 
@@ -11,7 +20,7 @@ body {
 }
 /* Simple, centered site header */
 .site-header {
-	background-color: #1976a5; /* Deep blue */
+	background-color: #1c3b4b; /* Deep blue */
 	color: #fff;
 	padding: 18px 0 12px 0;
 	text-align: center;
@@ -27,10 +36,10 @@ body {
 	background-image: url('img/cta-bg.jpg');
 	background-size: cover;
 	background-position: center;
-	color: #1976a5;
+	color: #1c3b4b;
 	min-height: 350px;
 	display: block;
-	margin-bottom: 32px;
+	margin-bottom: 0;
 	text-align: center;
 }
 
@@ -46,22 +55,22 @@ body {
 .cta-content {
 	position: relative;
 	z-index: 2;
-	padding: 60px 16px 48px 16px;
+	padding: 60px 100px 48px 100px;
 }
 
 .cta-content h2 {
-	font-size: 2.2em;
+	font-size: 2.8em;
 	margin-bottom: 18px;
 	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
 }
 
 .cta-content p, .cta-desc {
-	font-size: 1.15em;
+	font-size: 1.5em;
 	margin-bottom: 28px;
-	max-width: 500px;
+	max-width: 700px;
 	margin-left: auto;
 	margin-right: auto;
-	color: #1a3d4f; /* Darker color for readability */
+	color: #1c3b4b; /* Darker color for readability */
 }
 
 /* Main heading style */
@@ -83,7 +92,7 @@ body {
 
 /* Eye-catching CTA button */
 .cta-button {
-	background-color: #00b4d8;
+	background-color: #3cabaf;
 	color: #fff;
 	padding: 17px 40px;
 	text-decoration: none;
@@ -101,7 +110,7 @@ body {
 }
 
 .cta-button:hover {
-	background-color: #0077b6;
+	background-color: #1c3b4b;
 }
 
 /* Dark background info section with two columns */
@@ -109,12 +118,17 @@ body {
 	display: flex;
 	flex-direction: row;
 	background: #000;
-	border-radius: 8px;
-	margin: 36px auto 0 auto;
-	max-width: 1000px;
-	min-height: 320px;
+	border-radius: 0;
+	margin-top: 0;
+	margin-bottom: 0;
+	width: 100vw;
+	min-height: 0;
 	overflow: hidden;
 	text-align: left;
+	position: relative;
+	left: 50%;
+	right: 50%;
+	transform: translateX(-50%);
 }
 
 .info-image-large {
@@ -140,17 +154,20 @@ body {
 .info-text-box {
 	flex: 1 1 50%;
 	max-width: 50%;
-	height: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	padding: 15px;
+	padding-left: 100px;
+	padding-right: 100px;
 	color: #fff;
 	background: transparent;
 	min-width: 0;
 	box-sizing: border-box;
 	text-align: center;
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
 }
 .info-text-box h3 {
 	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
@@ -159,17 +176,21 @@ body {
 	margin-top: 0;
 	margin-bottom: 18px;
 	color: #fff;
+	font-size: 2.2em;
 }
 .info-text-box p {
 	color: #fff;
-	font-size: 1.1em;
+	font-size: 1.3em;
 	margin: 0;
 }
 
 @media (max-width: 900px) {
 	.dark-section {
 		flex-direction: column;
-		max-width: 98vw;
+		width: 100vw;
+		min-height: unset;
+		height: auto;
+		display: flex;
 	}
 	.info-image-large, .info-text-box {
 		max-width: 100%;
@@ -189,6 +210,10 @@ body {
 		text-align: center;
 		height: auto;
 	}
+	.cta-content {
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }
 
 @media (max-width: 700px) {
@@ -201,4 +226,28 @@ body {
 	.info-text {
 		text-align: center;
 	}
+}
+
+/* Footer styles */
+.site-footer {
+    background: #1c3b4b;
+    color: #fff;
+    text-align: center;
+    padding: 24px 10px 18px 10px;
+    font-size: 1em;
+    margin-top: 0;
+}
+.site-footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+.site-footer a:focus, .site-footer a:hover {
+    color: #3cabaf;
+    outline: 2px solid #fff;
+}
+
+/* Make sure the new button in the dark section matches the CTA button style */
+.info-text-box a.cta-button {
+    margin-top: 28px;
+    font-size: 1.15em;
 }

@@ -3,35 +3,51 @@
 <head>
   <meta charset="UTF-8">
   <title>PetQuest - Foster a Friend</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <!--
+    Project: PetQuest - Pet Fostering Call-to-Action
+    For: HTML & CSS Class Project
+    Purpose: Beginner-friendly site to encourage pet fostering and adoption.
+    Features: CTA banner, info section, accessibility, and responsive design.
+    Author: [Your Name]
+    Date: [Your Date]
+  -->
 </head>
 <body>
   <!-- Site header -->
   <header class="site-header">
-    <h1>PetQuest</h1>
+    <img src="img/PQ-AIlogo.png" alt="PetQuest logo" class="site-logo" />
   </header>
 
   <!-- Call-to-Action Banner -->
-    <section class="cta-banner">
-      <div class="cta-overlay"></div>
-      <div class="cta-content">
-  <h2>Open Your Heart<br>Foster a Pet Today!</h2>
-  <p class="cta-desc">Fostering rescue animals saves lives and gives pets a second chance. Your kindness can make all the difference.</p>
-  <a href="#" class="cta-button">Start Your Fostering Journey</a>
-      </div>
-    </section>
+  <section class="cta-banner" aria-labelledby="cta-heading">
+    <div class="cta-overlay" aria-hidden="true"></div>
+    <div class="cta-content">
+      <h2 id="cta-heading">Open Your Heart<br>Foster a Pet Today!</h2>
+      <p class="cta-desc">Fostering rescue animals saves lives and gives pets a second chance. Your kindness can make all the difference.</p>
+      <a href="#" class="cta-button" aria-label="Start Your Fostering Journey">Start Your Fostering Journey</a>
+    </div>
+  </section>
 
   <!-- Info section with image and text in two columns -->
-  <section class="info-section dark-section">
+  <section class="info-section dark-section" aria-labelledby="foster-heading">
     <div class="info-image-large">
-      <img src="img/pet.jpg" alt="Happy foster pet">
+      <img src="img/pet.jpg" alt="Happy foster pet looking for a home" />
     </div>
     <div class="info-text-box">
-      <h3>WHY FOSTER?</h3>
+      <h3 id="foster-heading">WHY FOSTER?</h3>
       <p>
         Fostering provides a safe, loving home for pets in need while they wait for adoption. It helps animals adjust to family life and frees up space in shelters for more rescues. Even a short-term foster can make a big impact!
       </p>
+      <a href="#" class="cta-button" aria-label="See Available Pups">See Available Pups</a>
     </div>
   </section>
+
+  <!-- Footer with contact info -->
+  <footer class="site-footer">
+    <p>&copy; 2025 PetQuest. All rights reserved.</p>
+    <p>Phone: <a href="tel:555-123-4567">555-123-4567</a> | Email: <a href="mailto:info@petquest.com">info@petquest.com</a></p>
+  </footer>
 </body>
 </html>
