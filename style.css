@@ -121,11 +121,13 @@ body {
 	flex: 1 1 50%;
 	min-width: 0;
 	max-width: 50%;
+	height: 350px;
 	display: flex;
 	align-items: stretch;
 	justify-content: flex-start;
 	background: #000;
 	padding: 0;
+	overflow: hidden;
 }
 .info-image-large img {
 	width: 100%;
@@ -138,15 +140,17 @@ body {
 .info-text-box {
 	flex: 1 1 50%;
 	max-width: 50%;
+	height: 350px;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
 	padding: 15px;
 	color: #fff;
 	background: transparent;
 	min-width: 0;
 	box-sizing: border-box;
+	text-align: center;
 }
 .info-text-box h3 {
 	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
@@ -170,15 +174,20 @@ body {
 	.info-image-large, .info-text-box {
 		max-width: 100%;
 		min-width: 0;
+		height: auto;
+	}
+	.info-image-large {
+		height: 220px;
 	}
 	.info-image-large img {
-		max-height: 250px;
-		height: auto;
+		max-height: 220px;
+		height: 100%;
 	}
 	.info-text-box {
 		padding: 15px;
 		align-items: center;
 		text-align: center;
+		height: auto;
 	}
 }
 
