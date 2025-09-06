@@ -1,3 +1,7 @@
+.site-footer .footer-contact {
+	font-size: 13px;
+	font-family: 'Quicksand', Arial, Helvetica, sans-serif;
+}
 /* Logo size constraint */
 .site-logo {
 	max-width: 200px;
@@ -230,12 +234,12 @@ body {
 
 /* Footer styles */
 .site-footer {
-    background: #1c3b4b;
-    color: #fff;
-    text-align: center;
-    padding: 24px 10px 18px 10px;
-    font-size: 1em;
-    margin-top: 0;
+	background: #1c3b4b;
+	color: #fff;
+	text-align: center;
+	padding: 24px 10px 18px 10px;
+	font-size: 9.5px;
+	margin-top: 0;
 }
 .site-footer a {
     color: #fff;
